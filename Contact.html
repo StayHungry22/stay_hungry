@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/cont.css">
+</head>
+<body>
+
+    <div class="contactUs">
+        <div class="title">
+            <h2> Stay Hungry</h2>
+        </div>
+        <div class="box">
+            <!--Form-->
+            <div class="contact form">
+                <h3>Send a message</h3>
+                <form action="https://formsubmit.co/stayhungry1020@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Email Submission!">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" name="fname" placeholder="First Name" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" name="lname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" name="Phone" placeholder="+91 800 452 6712">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea name="text" placeholder="Write your Response here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="Submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--Info box-->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Vashi, Navi Mumbai <br>INDIA </p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:stayhungry1020@gmail.com">stayhungry1020@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+918004526712">+91 800 452 6712</a>
+                    </div>
+                    <!--Social Media links-->
+                    <ul class="sci">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Map-->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30165.662105316827!2d72.9810503449436!3d19.076582232584133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c136b519107b%3A0x8452b99754be0fc8!2sVashi%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1642132477713!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: url("F:/contact us/img/bg1.jpg"), lightseagreen;
+    }
+
+    .contactUs {
+        position: relative;
+        width: 100%;
+        padding: 40px 100px;
+    }
+
+        .contactUs .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+            .contactUs .title h2 {
+                color: #fff;
+                font-weight: 500;
+            }
+
+    .form {
+        grid-area: form;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .map {
+        grid-area: map;
+    }
+
+    .contact {
+        padding: 40px;
+        background: #fff;
+        box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+    }
+
+    .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 5fr 4fr;
+        grid-template-areas:
+            "form info"
+            "form map";
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .contact h3 {
+        color: #000;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    /*form*/
+    .formBox {
+        position: relative;
+        width: 100%;
+    }
+
+        .formBox .row50 {
+            display: flex;
+            grid-gap: 20px;
+        }
+
+    .inputBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .formBox .row100 .inputBox {
+        width: 100%;
+    }
+
+    .inputBox span {
+        color: lightseagreen;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .inputBox input {
+        padding: 10px;
+        font-size: 1.1em;
+        outline: none;
+        border: 1px solid #000;
+    }
+
+    .inputBox textarea {
+        padding: 10px;
+        font-size: 1.1em;
+        outline: none;
+        border: 1px solid #000;
+        resize: none;
+        min-height: 220px;
+        margin-bottom: 10px;
+    }
+
+    .inputBox input[type="submit"] {
+        background: #ff578b;
+        color: #fff;
+        border: none;
+        font-size: 1.1em;
+        max-width: 120px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 14px 15px;
+    }
+
+    .inputBox ::placeholder {
+        color: #999;
+    }
+
+    /*Info*/
+    .info {
+        background: #33D3C7;
+    }
+
+        .info h3 {
+            color: #fff;
+        }
+
+        .info .infoBox div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+            .info .infoBox div span {
+                min-width: 40px;
+                height: 40px;
+                color: #000;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5em;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            .info .infoBox div p {
+                color: #000;
+                font-size: 1.1em;
+            }
+
+            .info .infoBox div a {
+                color: #000;
+                text-decoration: none;
+                font-size: 1.1em;
+            }
+
+    .sci {
+        margin-top: 40px;
+        display: flex;
+    }
+
+        .sci li {
+            list-style: none;
+            margin-right: 15px;
+        }
+
+            .sci li a {
+                color: #fff;
+                font-size: 2em;
+            }
+
+                .sci li a:hover {
+                    color: #738583;
+                }
+    /*map*/
+    .map {
+        padding: 0;
+    }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+    /*Responsive Design*/
+    @media(max-width: 991px) {
+        body {
+            background: url("F:/contact us/img/bg1.jpg"), lightseagreen;
+        }
+
+        .contactUs {
+            padding: 20px;
+        }
+
+        .box {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "form"
+                "info"
+                "map";
+        }
+
+        .formBox .row50 {
+            display: flex;
+            grid-gap: 0;
+            flex-direction: column;
+        }
+
+        .inputBox {
+            width: 100%;
+        }
+
+        .contact {
+            padding: 30px;
+        }
+
+        .map {
+            min-height: 300px;
+            padding: 30px;
+        }
+    }
+</style>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+body{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/*utilities*/
+h1 ,h4 ,h5 ,p {
+	margin:0;
+}
+
+.bg__dark{
+       background-color: #212121;
+       margin-bottom: 4px;
+}
+
+.bg__light{
+	background-color: lightseagreen !important;
+}
+
+.bg__dark .btn__light  {
+    margin-left: 30px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.text__light{
+		color: #fff;													
+}
+
+
+.btn__dark {
+	display: inline-block;
+	background-color: #212121;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;	
+ 	border-radius: 25px;
+ 	font-size: 14px;
+ 	letter-spacing: 2px;
+ 	transition: all 0.4s;
+}
+
+
+.btn__light {
+	display: inline-block;
+	background-color: #737070;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;	
+ 	border-radius: 25px;
+ 	font-size: 14px;
+ 	letter-spacing: 2px;
+ 	transition: all 0.4s;
+}
+.btn__light{
+    
+	background-color: #lightseagreen;
+}
+
+.btn__dark{
+	background-color: #212121;
+}
+
+.btn__dark:hover {
+	background-color: #fff;
+	color: lightseagreen;
+
+}
+
+.btn__light:hover {
+	background-color: #fff;
+	color: lightseagreen;
+
+}
+
+.margin__top{
+	margin-top: 15px;
+}
+
+.image__responsive{
+	width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+/*navbar */
+
+
+
+
+.navbar ul{
+	display: flex;
+	justify-content: center; 
+	padding: 0;
+	margin: 0;
+	list-style-type: none; 
+	cursor: pointer;
+	background-color: #212121;
+}
+
+.navbar ul li{
+	display: inline-block;
+
+}
+
+.navbar li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 25px 20px;
+	font-size: 15px;
+	color: lightseagreen;
+	letter-spacing:2px; 
+}
+
+/*hero section*/
+
+.hero__section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 85vh;
+	background-image:linear-gradient(#808080,#808080) ,url("../content_img/Halkova.jpg");
+	background-blend-mode: multiply;
+	background-size: cover;
+}
+.hero__text{
+	color:#fff;
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+.hero__text h1{
+	font-size: 100px;
+	font-weight: 500;
+
+}
+.hero__text p{
+	letter-spacing: 5px;
+	
+}
+
+/*recipe section*/
+.recipe__section{
+	padding: 70px 0;	
+
+}
+
+.image__wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: lightseagreen;
+	overflow: hidden;
+	border-radius: 2px;
+
+}
+
+.image__wrapper img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	transition: all 0.4s;
+	cursor: pointer;
+
+}
+
+.image__wrapper:hover img{
+	transform: scale(1.2, 1.2);
+
+}
+.image__wrapper-text{
+	padding: 30px 15px;
+	height: 150px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+}
+.image__wrapper-text h5{
+	color:lightseagreen;
+	font-size: 20px;
+	font-weight: 500;
+}
+.image__wrapper-text p{
+	line-height: 26px;
+}
+
+/*about section*/
+.about__section{
+	padding: 70px 0;
+	background-color: lightseagreen;
+	color: #fff;
+}
+
+.about__section h4{
+	font-size: 28px;
+	font-weight: 500;
+}
+.about__section p{
+	line-height: 36px;
+	font-weight: 100;
+}
+.image__background{
+	position: relative;
+	z-index: 1;
+}
+
+.image__background:before {
+	position: absolute;
+	top: -30px;
+	left:-30px;
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: #000;
+}
+.image__background img{
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+
+/*extra section*/
+.extra__section{
+	padding: 70px 0;
+}
+.extra__section h4{
+    padding: 13px 10px;
+    font-size: 23px;
+	font-weight: 500;
+}
+.extra__section p{
+    padding-left: 20px;
+    line-height: 32px;
+	font-weight: 300;
+}
+
+/*subscribe section*/
+
+.subscribe__section{
+	padding: 40px 0;
+	background-color: #212121;
+	color: #fff;
+}
+.subscribe__section form{
+	display: flex;
+}
+.subscribe__section button{
+	background-color: lightseagreen;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	
+}
+/*Category section*/
+
+.category__section{
+	padding: 70px 0;
+}
